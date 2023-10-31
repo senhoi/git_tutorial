@@ -1,0 +1,48 @@
+"D:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/MinGW/bin/mingw32-make.exe "-DCMAKE_C_COMPILER=D:/Program Data/STM32Cube/GNU-Tools-ARM-Embedded/bin/arm-none-eabi-gcc.exe" "-DCMAKE_CXX_COMPILER=D:/Program Data/STM32Cube/GNU-Tools-ARM-Embedded/bin/arm-none-eabi-g++.exe" -G "CodeBlocks - MinGW Makefiles" -S D:\Workspace\Clion\git_tutorial -B D:\Workspace\Clion\git_tutorial\cmake-build-debug
+-- The C compiler identification is GNU 10.3.1
+-- The CXX compiler identification is GNU 10.3.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: D:/Program Data/STM32Cube/GNU-Tools-ARM-Embedded/bin/arm-none-eabi-gcc.exe
+-- Check for working C compiler: D:/Program Data/STM32Cube/GNU-Tools-ARM-Embedded/bin/arm-none-eabi-gcc.exe - broken
+CMake Error at D:/Program Files/JetBrains/CLion 2022.3/bin/cmake/win/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "D:/Program Data/STM32Cube/GNU-Tools-ARM-Embedded/bin/arm-none-eabi-gcc.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: D:/Workspace/Clion/git_tutorial/cmake-build-debug/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):D:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_3ae30/fast && D:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\cmTC_3ae30.dir\build.make CMakeFiles/cmTC_3ae30.dir/build
+    mingw32-make.exe[1]: Entering directory 'D:/Workspace/Clion/git_tutorial/cmake-build-debug/CMakeFiles/CMakeTmp'
+    Building C object CMakeFiles/cmTC_3ae30.dir/testCCompiler.c.obj
+    "D:\Program Data\STM32Cube\GNU-Tools-ARM-Embedded\bin\arm-none-eabi-gcc.exe"   -fdiagnostics-color=always -o CMakeFiles\cmTC_3ae30.dir\testCCompiler.c.obj -c D:\Workspace\Clion\git_tutorial\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+    Linking C executable cmTC_3ae30.exe
+    "D:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3ae30.dir\link.txt --verbose=1
+    "D:\Program Files\JetBrains\CLion 2022.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_3ae30.dir/objects.a
+    "D:\Program Data\STM32Cube\GNU-Tools-ARM-Embedded\bin\arm-none-eabi-ar.exe" qc CMakeFiles\cmTC_3ae30.dir/objects.a @CMakeFiles\cmTC_3ae30.dir\objects1.rsp
+    "D:\Program Data\STM32Cube\GNU-Tools-ARM-Embedded\bin\arm-none-eabi-gcc.exe" -Wl,--whole-archive CMakeFiles\cmTC_3ae30.dir/objects.a -Wl,--no-whole-archive -o cmTC_3ae30.exe -Wl,--out-implib,libcmTC_3ae30.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3ae30.dir\linklibs.rsp
+    d:/program data/stm32cube/gnu-tools-arm-embedded/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+    d:/program data/stm32cube/gnu-tools-arm-embedded/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+    collect2.exe: error: ld returned 1 exit status
+    CMakeFiles\cmTC_3ae30.dir\build.make:99: recipe for target 'cmTC_3ae30.exe' failed
+    mingw32-make.exe[1]: *** [cmTC_3ae30.exe] Error 1
+    mingw32-make.exe[1]: Leaving directory 'D:/Workspace/Clion/git_tutorial/cmake-build-debug/CMakeFiles/CMakeTmp'
+    Makefile:126: recipe for target 'cmTC_3ae30/fast' failed
+    mingw32-make.exe: *** [cmTC_3ae30/fast] Error 2
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "D:/Workspace/Clion/git_tutorial/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "D:/Workspace/Clion/git_tutorial/cmake-build-debug/CMakeFiles/CMakeError.log".
